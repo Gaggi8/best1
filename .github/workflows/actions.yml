@@ -1,11 +1,22 @@
-name: my-workflow
+name: my first workflow
 on: workflow_dispatch
-jobs:
+jobs: 
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: first-step
+      - name: my-first-step
+        run: echo "gagan"
+      - name: my-second-job
         run: |
-          echo "gagan"
-          echo "123"
+            echo "123"
+            echo "456"    
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-second-step
+        run: echo "megha"
+      - name: my-second-job
+        run: |
+            echo "098"
+            echo "654"       
 
